@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        const getBasePath = () => {
+            if (window.location.hostname.includes('github.io')) {
+                return '/virtual-love-confession';
+            }
+            return '';
+        };
+        window.location.href = getBasePath() + '/index.html' + window.location.search;
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

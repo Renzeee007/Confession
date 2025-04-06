@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Confession Wall</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>📝 Confession Wall 📝</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="signin">Sign In</button>
+                <button class="tab-btn" data-tab="signup">Sign Up</button>
+            </div>
+            
+            <div id="signin" class="tab-content active">
+                <form id="loginForm">
+                    <input type="text" id="loginUsername" placeholder="Enter your username" required>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+
+            <div id="signup" class="tab-content">
+                <form id="signupForm">
+                    <input type="text" id="signupUsername" placeholder="Choose your username" required>
+                    <input type="password" id="signupPassword" placeholder="Create your password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                    <p class="username-requirements">Username must be at least 3 characters long</p>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

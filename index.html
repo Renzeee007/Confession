@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <title>Confession Wall</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Confessions</h1>
+        <p>Share your thoughts anonymously or with your name</p>
+
+        <form id="confessionForm">
+            <input type="text" id="nameInput" placeholder="Your Name (Optional)">
+            <textarea id="messageInput" placeholder="Write your confession..." maxlength="200" required></textarea>
+            <button type="submit">Confess</button>
+        </form>
+
+        <div id="confessionsContainer">
+            <h2>💬 Confessions 💬</h2>
+            <ul id="confessionsList" class="confessions-list"></ul>
+        </div>
+    </div>
+
+    <div id="replyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Reply to Confession</h3>
+            <form id="replyForm">
+                <input type="text" id="replyName" placeholder="Your Name (Optional)">
+                <textarea id="replyMessage" placeholder="Write your reply..." required></textarea>
+                <button type="submit">Send Reply</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
