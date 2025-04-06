@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Page Not Found</title>
     <script>
-        const getBasePath = () => {
-            if (window.location.hostname.includes('github.io')) {
-                return '/virtual-love-confession';
-            }
-            return '';
-        };
-        window.location.href = getBasePath() + '/index.html' + window.location.search;
+        const segmentCount = 1;
+        const location = window.location;
+        const replacePath = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
+        const path = '/virtual-love-confession/';
+        window.location.replace(path);
     </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+    <h1>Redirecting...</h1>
 </body>
 </html>

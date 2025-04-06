@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Update the path handling for GitHub Pages
     const getBasePath = () => {
-        // Check if we're on GitHub Pages
         if (window.location.hostname.includes('github.io')) {
             return '/virtual-love-confession';
         }
